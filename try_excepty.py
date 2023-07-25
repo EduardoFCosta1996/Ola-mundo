@@ -7,7 +7,7 @@ except ZeroDivisionError:
     print('Error')
 
 except (NameError, IndexError):
-    print("Nome error")
+    print("Nome error e IndexError")
 
 except Exception:
     print("Error desconhecido")
