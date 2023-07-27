@@ -18,7 +18,28 @@ novo_preco = [
 ]
 print(*novo_preco, sep="\n")
 
+print("-------------------------------------------------")
 
+def ordena_preco(item):
+    return item["preco"]
+
+lista_preco = produtos
+lista_preco.sort(key=ordena_preco )
+for nova_ordem in lista_preco:
+    print(nova_ordem)
+
+
+print("-------------------------------------------------")
+
+
+def ordem_nome(item_nome):
+    return item_nome["Nome"]
+
+lista_nome = produtos
+lista_nome.sort(key=ordem_nome)
+for lista_por_nome in lista_nome:
+    print(lista_por_nome)
+    
 
 #produtos_novo_valor = copy.deepcopy(produtos)
 #for x in produtos_novo_valor:
