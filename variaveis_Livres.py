@@ -1,7 +1,7 @@
 def fora(x):
    a = x
    def dentro():
-      #print(locals())
+      print(locals())
       return a
    return dentro
 
