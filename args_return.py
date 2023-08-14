@@ -1,3 +1,4 @@
+
 def soma(*args):
     total = 0
     for numeros in args:
