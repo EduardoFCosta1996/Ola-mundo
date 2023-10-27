@@ -1,0 +1,21 @@
+<button id="produto1">Comprar Produto 1</button>
+<button id="produto2">Comprar Produto 2</button>
+
+<script>
+document.getElementById('produto1').addEventListener('click', function() {
+    sendWhatsAppMessage('Produto 1');
+});
+
+document.getElementById('produto2').addEventListener('click', function() {
+    sendWhatsAppMessage('Produto 2');
+});
+
+function sendWhatsAppMessage(productName) {
+    var phoneNumber = '+55 12 996521662';
+    var message = 'Eu quero encomendar o ' + productName;
+
+    var whatsappLink = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURI(message);
+
+    window.location.href = whatsappLink;
+}
+</script>
