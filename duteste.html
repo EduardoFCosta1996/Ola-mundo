@@ -19,3 +19,26 @@ function sendWhatsAppMessage(productName) {
     window.location.href = whatsappLink;
 }
 </script>
+
+
+
+
+
+
+--
+
+
+<span class="symbol-wrapper"><svg width="8" height="12" viewBox="0 0 8 12" class="symbol symbol-mobileOnlyIndicator"><path fill-rule="evenodd" d="M2 9h4V2H2v7zm1.004 2v-1h1.998v1H3.004zM1.6 0C.72 0 0 .771 0 1.714v8.572C0 11.229.72 12 1.6 12h4.8c.883 0 1.6-.768 1.6-1.714V1.714C8 .768 7.283 0 6.4 0H1.6z"></path></svg></span>
+
+
+
+
+++++++++++
+
+$w.onReady(function () {
+    const productLink = "URL_DO_PRODUTO_ESCOLHIDO"; // Substitua pelo URL do produto específico
+    const phoneNumber = "+55 12 996521662"; // Substitua pelo número de telefone desejado
+    const message = `Eu quero encomendar este produto: ${productLink}`;
+
+    $w("#mobileButton1").link = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+});
