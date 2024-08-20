@@ -24,7 +24,6 @@ lista = [
 #def ordena(item):
 #    return item['nome']
 
-lista.sort(key=lambda item:['nome'])
 
-for nome in lista:
-    print(nome)
+
+
