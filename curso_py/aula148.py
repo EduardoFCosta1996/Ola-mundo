@@ -26,8 +26,8 @@ def gen2(gen=None):
 
 
 g1 = gen2(gen1())
-g2 = gen2(gen3())
-g3 = gen2()
+g2 = gen2(gen2())
+g3 = gen3()
 for numero in g1:
     print(numero)
 print()
