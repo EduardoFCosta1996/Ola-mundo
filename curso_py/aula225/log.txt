@@ -1,0 +1,6 @@
+Error:qualquer coisa LogFileMixinSucess:Sucess LogFileMixinError:qualquer coisa LogFileMixinSucess:Sucess LogFileMixinError:qualquer coisa LogFileMixin
+Sucess:Sucess LogFileMixin
+Error:qualquer coisa LogFileMixin
+Sucess:Sucess LogFileMixin
+Sucess:Galaxy Está ligado Smartphone
+Error:iphone Está desligado Smartphone

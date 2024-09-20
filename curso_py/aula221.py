@@ -1,7 +1,7 @@
 class MinhaString(str):
     def upper(self):
         print('CHAMOU UPPER')
-        retorno = super().upper()
+        retorno = super(MinhaString, self).upper()
         return retorno
 
 
