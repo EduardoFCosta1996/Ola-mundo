@@ -35,11 +35,11 @@ class Cliente(Pessoa):
 
 
 if __name__ == '__main__':
-    c1 = Cliente('Eduardo', 28)
+    c1 = Cliente('Luiz', 30)
     c1.conta = contas.ContaCorrente(111, 222, 0, 0)
     print(c1)
     print(c1.conta)
-    c2 = Cliente('Costa', 18)
+    c2 = Cliente('Maria', 18)
     c2.conta = contas.ContaPoupanca(112, 223, 100)
     print(c2)
     print(c2.conta)
