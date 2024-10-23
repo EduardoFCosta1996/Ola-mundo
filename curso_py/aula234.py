@@ -4,7 +4,7 @@ class OutroError(Exception):
     ...
 def levantar():
     exception_ = MeuError('a', 'b', 'c')
-    exception_.add_note('nota 1')
+    
     raise exception_
 try:
     levantar()
@@ -13,4 +13,5 @@ except (MeuError, ZeroDivisionError) as error:
     print(error.args)
     print()
     exception_ = OutroError('Vou lançar de novo')
+    exception_
     raise exception_ from error

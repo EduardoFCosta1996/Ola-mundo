@@ -7,7 +7,8 @@ class Notificacao(ABC):
     @abstractmethod
     def enviar(self): ...
                
-class NotificacaoEmail(Notificacao) -> boll:
+
+class NotificacaoEmail(Notificacao) :
     def enviar(self):
         print('email: enviando', self.messagem)
         return True

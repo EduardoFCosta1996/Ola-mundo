@@ -1,18 +1,16 @@
-from typing import Any
-
-
 class Multiplicar:
-    def __init__(self, func):
-        self.func = func
-
-    def __call__(self, *args, **kwargs):
-        print(args, kwargs)
-        return self.func(*args, **kwargs)
-        
-
-@Multiplicar
-def soma (x, y):
-    return x*y
+    def __init__(self, multiplicador):
+        self._multiplicador = multiplicador
+    def __call__(self, func):
+        def interna(*args, **kwargs):
+            resultado = func(*args, **kwargs)
+            return resultado * self._multiplicador
+        return interna
+@Multiplicar(2)
+def soma(x, y):
+    return x + y
+dois_mais_quatro = soma(2, 4)
+print(dois_mais_quatro)
 
 operacao = soma (2, 2)
 print(operacao)
